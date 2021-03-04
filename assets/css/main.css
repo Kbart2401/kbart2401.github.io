@@ -4061,6 +4061,7 @@ input, select, textarea {
 
 	#banner {
 		backdrop-filter: blur(3px);
+		-webkit-backdrop-filter: blur(3px);
 	}
 
 	body.landing #footer {
