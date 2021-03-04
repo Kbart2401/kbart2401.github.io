@@ -128,6 +128,32 @@ input, select, textarea {
 		border: 2px solid white;
 	}
 
+	img.skills-icon {
+		height: 96px;
+		transition: .25s ease;
+	}
+
+	img.skills-icon:hover {
+		height: 105px;
+	}
+
+	ul.icons li.icon-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#envelope {
+		height: 42px;
+		background-color: white;
+	}
+
+	ul#contact-container.actions {
+		display: flex;
+		justify-content: flex-start;
+		width: 100% !important;
+	}
+
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
@@ -1813,10 +1839,48 @@ input, select, textarea {
 			top: 0;
 		}
 
+		.content i {
+			font-size: 75%;
+		}
+
+		#resume-button {
+			background-color: rgba(0, 0, 0, 0.075);
+		}
+
+		#resume-button:hover {
+			background-color: rgba(0, 0, 0, 0.15);
+		}
+
+		.kid-kyle {
+			height: 90%;
+			border-radius: 20%;
+			border: 2px solid white
+		}
+
+		.kid-pic-container {
+			height: 20rem;
+			margin-left: 25px;
+		}
+
+		.fade-in {
+			opacity: 0;
+			animation: fadeIn ease 5s;
+			animation-delay: 5s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes fadeIn {
+			0% {opacity: 0;}
+			100% {opacity: 1;}
+		}
+
 		@media screen and (max-width: 736px) {
 
 			header.major {
 				margin: 0 0 2em 0;
+			}
+
+			.kid-kyle {
+				display: none;
 			}
 
 		}
@@ -2332,6 +2396,9 @@ input, select, textarea {
 
 		ul.icons.major {
 			padding: 1em 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
 		}
 
 			ul.icons.major li {
