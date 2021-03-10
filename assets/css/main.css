@@ -2184,6 +2184,10 @@ input, select, textarea {
 			display: block;
 		}
 
+		.image:hover img {
+			filter: opacity(30%);
+		}
+
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
@@ -2213,6 +2217,17 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+	
+	.image .image-overlay {
+		position: absolute;
+		top: 50%;
+		left: 40%;
+		opacity: 0;
+	}
+
+	.image:hover .image-overlay {
+		opacity: 1;
+	}
 
 /* List */
 
