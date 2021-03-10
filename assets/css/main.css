@@ -2182,6 +2182,7 @@ input, select, textarea {
 		.image img {
 			border-radius: 3px;
 			display: block;
+			transition: .2s ease;
 		}
 
 		.image:hover img {
