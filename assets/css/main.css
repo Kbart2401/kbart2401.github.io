@@ -3239,7 +3239,10 @@ input, select, textarea {
 			}
 
 		.wrapper.style4 {
-			background-color: transparent;
+			background-image: url('../../images/aurora.jpg');
+			background-attachment: fixed;
+			backdrop-filter: blur(50%);
+			-webkit-backdrop-filter: blur(3px);
 		}
 
 		.wrapper.style5 {
